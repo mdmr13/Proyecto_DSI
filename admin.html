@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f5fa;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7b61a8;
+        }
+
+        .logout {
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: #eee8f5;
+            color: #654d91;
+            font-weight: bold;
+        }
+
+        .logout:hover {
+            background: #e1d8ec;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .container h1 {
+            color: #5d4b8c;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            color: #7b61a8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #777;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Panel de Admin
+        </div>
+
+        <a href="login.html" class="logout">
+            Cerrar sesión
+        </a>
+
+    </header>
+
+    <main class="container">
+
+        <h1>Panel de Administración</h1>
+
+        <p>
+            Bienvenido al área de administración.
+        </p>
+
+        <section class="cards">
+
+            <div class="card">
+                <h2>Usuarios</h2>
+                <p>
+                    Aquí podremos administrar los usuarios del sistema.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Información</h2>
+                <p>
+                    Aquí podremos mostrar y administrar información.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Configuración</h2>
+                <p>
+                    Aquí podremos agregar las opciones de configuración.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```
